@@ -1,23 +1,30 @@
 function setup() {
-	// define artboard size
-	createCanvas(500,500);
-	// Set here the values that are not changing all over the sketch
-	strokeWeight(2);
-	stroke(170);
+ createCanvas(750, 750);
+  angleMode(DEGREES);
+  background (60);
+  noFill();
+  frameRate(120);
+
 }
 
-function draw() {
-	background(204);
+function  draw() {
+  translate(width/2,height/2);
+  rotate(frameCount*43);
+  ellipse(100,0,50,250);
+ stroke(
+    lerpColor(
+      color("#8FFFFA"),
+      color("#FF6D60"),
 
-	//Neck
-	line(250, 285, 250, 345);
+      frameCount / 200
+    ));
 
-	//Wheel
-	ellipse(250, 465, 70, 70);
+  ellipse(100,0,250);
+  if(frameCount == 200)noLoop();
 
-	//Body
-	rect(200, 325, 100, 140);
+    ellipse(290,30,50);
+  if(frameCount == 20);
+  ellipse(320,50,20);
 
-	//Head
-	ellipse(250, 240, 90, 90);
 }
+    
