@@ -9,7 +9,7 @@ function setup() {
 
 function  draw() {
   translate(width/2,height/2);
-  rotate(frameCount*43);
+  rotate(frameCount*83);
   ellipse(100,0,50,250);
  stroke(
     lerpColor(
@@ -27,4 +27,3 @@ function  draw() {
   ellipse(320,50,20);
 
 }
-    
